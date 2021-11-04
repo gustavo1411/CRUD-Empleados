@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Desea elimina a {{data.nombre}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-actions fxLayout>
+
+        <button mat-button color="warn" (click)="borrar()">Borrar</button>
+        <span class="spacer"></span>
+        <button mat-button color="primary" (click)="cancelar()">Cancelar</button>
+
+
+    </mat-card-actions>
+</mat-card>

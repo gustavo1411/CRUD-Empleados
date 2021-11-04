@@ -1,0 +1,31 @@
+
+
+<mat-sidenav-container fullscreen>
+    <mat-toolbar>
+        
+        <h1>Empleados App
+            <mat-icon>copyright</mat-icon>
+        </h1>
+        <span class="spacer"></span>
+    
+        <button mat-button routerLink="/empleados/listado">Usuarios</button>
+        <span class="spacer"></span>
+        <button mat-button>Logout</button>
+    
+    </mat-toolbar>
+
+    <span class="spacer"></span>
+    <button mat-raised-button color="warn" routerLink='/empleados/agregar'>Agregar Empleado</button>
+    
+    
+    <div class="row">
+        <div class="col">
+            <router-outlet></router-outlet>
+    
+        </div>
+    </div>
+
+</mat-sidenav-container>
+
+
+

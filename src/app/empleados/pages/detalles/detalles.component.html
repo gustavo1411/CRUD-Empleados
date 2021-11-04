@@ -1,0 +1,30 @@
+<mat-card>
+
+    <button mat-raised-button color="accent" class="btn-volver" routerLink="/empleados/listado">
+        <mat-icon>west</mat-icon>
+    </button>
+
+    <mat-card-header>
+        <mat-card-title>{{empleado.nombre}}</mat-card-title>
+        <mat-card-subtitle>{{empleado.apellido}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+        <p>{{empleado.email}}</p>
+        <p>{{empleado.telefono}}</p>
+    </mat-card-content> 
+    <img src="assets/no-image.png" alt="">
+
+   <mat-card-actions>
+
+        <button mat-raised-button color="primary" [routerLink]="['/empleados/editar', empleado.id]">Editar</button>
+        <span class="spacer"></span>
+        <button mat-raised-button color="warn" (click)="eliminarEmpleado(empleado.id!)">Eliminar</button>
+    
+
+   </mat-card-actions>
+
+
+
+
+</mat-card>
